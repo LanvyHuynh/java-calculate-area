@@ -1,0 +1,33 @@
+public class Area 
+{
+
+	final static double PI = 3.14;
+		
+	public static double calculateArea(double ht, int wid, int len) //box
+	{
+		return ht * wid * len;
+	}
+	
+	
+	public static double calculateArea(double rad) //circle
+	{
+		return PI * rad;
+	}
+
+	public static double calculateArea(int wid, int len) //rectangle
+	{
+		return wid * len;
+	}
+	
+	public static double calculateArea(double rad, double ht) //cylinder
+	{
+		return PI * rad * rad * ht;
+	}
+	
+	public String toString()
+	{
+		String str = "Pi = " + PI;
+		
+		return str;
+	}
+}	
