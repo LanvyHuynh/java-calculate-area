@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class CalculateArea 
+
+{
+	
+	private static double radius, height;
+	
+	private static int width, length;
+	
+	public static void main(String[] args)
+	
+{
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.print("What is the length? ");
+		
+		length = keyboard.nextInt();
+			
+		System.out.print("What is the width? ");
+		
+		width = keyboard.nextInt();
+		
+		System.out.print("What is the height? ");
+		
+		height = keyboard.nextDouble();
+		
+		System.out.print("What is the radius? ");
+		
+		radius = keyboard.nextDouble();
+		
+		if (length > 40)
+			
+		{
+			
+			System.out.printf("The area of the box is %,.2f\n", Area.calculateArea(height, width, length));
+		
+		}
+		
+		else
+			
+		{
+			
+		}
+		
+		System.out.printf("The area of the circle is %,.2f\n", Area.calculateArea(radius));
+		
+		System.out.printf("The area of the rectangle is %,.2f\n", Area.calculateArea(width, length));
+		
+		System.out.printf("The area of the cylinder is %,.2f\n", Area.calculateArea(radius, height));
+		
+		Area displayPi = new Area ();
+		
+		System.out.println(displayPi.toString()); //System.out.println(displayPi); still the same
+		
+}
+
+}
